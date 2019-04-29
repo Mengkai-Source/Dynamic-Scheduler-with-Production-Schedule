@@ -1,5 +1,5 @@
 # Dynamic-Scheduler-SA
-This version with the updated optimization algorithm SA
+This version with SA and incorporate the production schedule
 
 Dynamic-Scheduling-SA
 Prof.Xiaoning Jin, Prof.Kamarthi, PhD student: Anqi He, Mengkai Xu
