@@ -23,7 +23,7 @@ Production Schedule Dataset: machine production shcedule, i.e. start working tim
 
 #3. Function file: Install
 
-'MainFunction.m':This is the main function to run the Dynamic Scheduler and display the desired results. The Outputs from running this function contain: Countdown time To (Order placement) and Tm (Maintenance performance); A vector contains the risks corresponding to current time onwards; A vector contains the risks corresponding to each order in the production schedule.
+'MainFunction.m':This is the main function to run the Dynamic Scheduler and display the desired results. The Outputs from running this function contain: Countdown time To (Order placement) and Tm (Maintenance performance); A vector contains the risks corresponding to current time onwards; A vector contains the risks corresponding to each order in the production schedule. (Thress adjustable parameters: Cws (Spare part inventory cost  Dollar ($)/ per day), Cwc (Machine downtime cost Dollar ($)/ per day) and L (Part lead time: Days). The parameter for lead time is 'L'.)
 
 'CostRate.m': This function is the objective function to calculate the 'cost' metric based on the predicted degradation path.
 
