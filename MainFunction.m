@@ -66,8 +66,8 @@ end
 C1 = 15; % Maintenance cost for type 1
 C2 = 20; % Maintenance cost for type 2
 C3 = 40; % Maintenance cost for type 3
-Cws = 1; % Cost of inventory per unit time 
-Cwc = 1000; % Cost of machine breakdown per unit time
+Cws = 1; % Cost of inventory per day
+Cwc = 1000; % Cost of machine breakdown per day
 C0 = 0.5; % Initial cost can be removed
 delta_t = 1 ; % Unit time (provided by PDX)
 
