@@ -115,7 +115,6 @@ p=cumsum(P); % The derived end ponits for each order
 Risk = RiskFunc(X, p); % Calculate risk for each order
 %% Dispaly risk corrsponding to each order
 order_risk=Risk.batch;
-order_risk=vpa(order_risk);
 order_ind =1:r;
 order_risk=[order_ind;order_risk];
 fprintf('Risk for each order: ');
@@ -124,7 +123,6 @@ fprintf('\n');
 
 %% Dispaly risk for each upcoming day
 Day_risk=Risk.all;
-Day_risk=vpa(Day_risk);
 Day_risk=Day_risk(2:end);
 fprintf('Risk for the current time and time in the future: ');
 disp(Day_risk);
