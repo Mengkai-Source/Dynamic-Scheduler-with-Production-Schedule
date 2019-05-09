@@ -36,7 +36,7 @@ clc
 global X L Xf C1 C2 C3 Cws Cwc N M C0 delta_t xlower xupper xdelt;
 
 % Import the data of the future predicted degradation path
-load('Sample_Date_With_TS_2.mat'); %Import the sample data from PDX
+load('Sample_Data_With_TS_2.mat'); %Import the sample data from PDX
 
 X=HI_Curves';
 %% Define the feasible region
