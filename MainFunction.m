@@ -121,15 +121,15 @@ rowOfSmallestValue = find(Cur_base == smallestPosValue);
 Pro_Schedule = Pro_Schedule(rowOfSmallestValue:end,:);
 Pro_Schedule{1,1}=Cur_Date;
 [ur uc] = size(Pro_Schedule);
+T1 = datetime(Pro_Schedule{1,1});
 for i =1:ur
-T1 = datetime(Pro_Schedule{i,1});
 T2 = datetime(Pro_Schedule{i,2});
 P(i) = T2 - T1;
 end
 P.Format='d';  % Format the time duration in days
-P=days(P); P=round(P); % Convert duration array to numeric array by rounding the numerical value to the nearest integer
-p=cumsum(P); % The derived end ponits for each order
-%%%%%%%%%%
+P=days(P);% The derived end ponits for each order
+p=round(P); % Convert duration array to numeric array by rounding the numerical value to the nearest integer 
+%% Production schedule beyond HI_Curves are truncated
 if p(end)> row
     trunc_positive = row - p >0;
     smallest_trunc = min(trunc_positive(trunc_positive));
