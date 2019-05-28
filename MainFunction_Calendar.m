@@ -1,7 +1,7 @@
 %%%%%----- Simulated Annealing for discrete optimization (DMDII)----%%%%%
 %%%%% The gap between orders are not removed in compliance with PDX, this
 %%%%% source code is sent to PDX
-function MainFunction_Calendar
+function MainFunction
 %
 %  This is the main function to run the Dynamic Scheduler and display the preliminary results.
 %
